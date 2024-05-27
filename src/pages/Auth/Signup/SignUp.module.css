@@ -1,0 +1,226 @@
+.signup_main_container{
+
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.div_back
+{
+    
+    width: 100vw;
+    height: 10vh;
+    
+    justify-content: baseline;
+}
+.backtext
+{
+    margin: 0px;
+    padding: 0px;
+    top: 30px;
+    position: absolute;
+    left: 35px;
+    font-size: 14px;
+    font-family: 'Kufam-Black';
+}
+.div_creteaccount
+{
+   
+    width: 100vw;
+    /* height: 10vh; */
+    
+    justify-content: center;
+    display: flex;
+}
+.creteaccount
+{
+    margin: 0px;
+    padding: 0px;
+    top: 60px;
+    font-weight: bolder;
+    font-size: 25px;
+    justify-content: center;
+    font-weight: 700;
+    font-family: 'Inter-Bold';
+}
+.div_startnow
+{
+    
+    width: 100vw;
+    height: 10vh;
+    line-height: 30.26px;
+    justify-content: center;
+    display: flex;
+}
+.startnow
+{
+    margin: 0px;
+    padding: 0px;
+    top: 60px;
+    /* font-weight: bolder; */
+    font-size: 15px;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 18.15px;
+    font-family: 'Inter-Regular';
+}
+
+
+
+
+.div_inputgroupEmail
+{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+.formInput
+{
+    justify-content: center;
+    width: 695px;
+    height: 53px;
+    border-radius: 50px;
+    box-shadow: 0px 3px 0px 0px rgba(217, 217, 217, 1);  
+    /* box shador  right bottom left top */
+    border: 1px solid rgba(217, 217, 217, 1);
+}
+
+
+
+.div_checkboxMain
+{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.checkBox
+{
+    
+    width: 20px;
+height: 20px;
+
+gap: 0px;
+border: 1px 0px 0px 0px;
+opacity: 0px;
+background: rgba(255, 255, 255, 1);
+border: 1px solid rgba(0, 0, 0, 1);
+justify-content: center;
+
+}
+.p_Iagree{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Inter_Bold';
+    margin-left: 10px;
+}
+
+.div_buttonMain
+{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 25px;
+}
+.buttonContinue{width: 254px;
+    height: 56px;
+    top: 641px;
+    left: 593px;
+    gap: 0px;
+    border-radius: 50px 50px 50px 50px;
+   
+    box-shadow: 0px 4px 15px 0px rgba(124, 124, 124, 1);
+    background: rgba(0, 0, 0, 1);
+    font-family: 'Inter-Regular';
+font-size: 15px;
+font-weight: 734;
+line-height: 18.15px;
+text-align: left;
+font-variation-settings: 'slnt' 0;
+color: #fff;
+text-align: center;
+
+
+
+}
+.buttonContinue:hover{
+    cursor: pointer;
+}
+
+.hrLine
+{
+    display: flex;
+    width: 6vw;
+    height: 0px;
+    top: 761px;
+    left: 566px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    margin: 20px;
+}
+.div_alreadyAccount{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.p_account{
+    width: 238px;
+height: 18px;
+font-family: 'Inter-Regular';
+font-size: 15px;
+font-weight: 300;
+line-height: 18.15px;
+text-align: left;
+font-variation-settings: 'slnt' 0;
+justify-content: center;
+align-items: center;
+}
+.p_login{
+justify-content: center;
+align-items: center;
+font-family: 'Inter-Regular';
+font-weight: 700;
+}
+.p_login:hover{
+cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Pseudo Elements */
+
+
+::placeholder
+{
+    content: "";
+    padding-left: 35px;
+    font-family: 'Inter-Regular';
+font-size: 15px;
+font-weight: 734;
+line-height: 18.15px;
+text-align: left;
+font-variation-settings: 'slnt' 0;
+
+}

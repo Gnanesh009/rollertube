@@ -16,15 +16,37 @@ const LiveScreen=()=> {
   },[])
 
   // const appId = 'a5ba118939794f0183a015e60c03d657';
+  interface RTCParams {
+    uid?: string | number;
+  }
+    
+//   var rtc = {
+//     client: null,
+//     joined: false,
+//     published: false,
+//     localStream: null,
+//     remoteStreams: [],
+//     params: {}
+// };
 
-  var rtc = {
-    client: null,
-    joined: false,
-    published: false,
-    localStream: null,
-    remoteStreams: [],
-    params: {}
-};
+interface RTC {
+  client: any;
+  joined: boolean;
+  published: boolean;
+  localStream: any;
+  remoteStreams: any[];
+  params: RTCParams;
+}
+let rtc: RTC = {
+  client: null,
+  joined: false,
+  published: false,
+  localStream: null,
+  remoteStreams: [],
+  params: {}
+}
+
+
 
 
 function generateToken(length:number) {
@@ -65,13 +87,13 @@ function genetateUID()
 {
   return Math.floor(Math.random() * 100)
 }
-function randomString(length, chars) {
+function randomString(length:number, chars:string) {
   var result = '';
   for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
   return result;
 }
 
-const   joinChannel=async (role)=> {
+const   joinChannel=async (role:string)=> {
   // Create a client
   var option = {
     appID: "a5ba118939794f0183a015e60c03d657",
@@ -82,14 +104,14 @@ const   joinChannel=async (role)=> {
     secret: '',
     certificate:'1390ebdbe1da47ee90ca398ce756594e'
   }
-  var rtc = {
-    client: null,
-    joined: false,
-    published: false,
-    localStream: null,
-    remoteStreams: [],
-    params: {}
-};
+//   var rtc = {
+//     client: null,
+//     joined: false,
+//     published: false,
+//     localStream: null,
+//     remoteStreams: [],
+//     params: {}
+// };
   
   // clientRTC.join(option.appID,option.channel,option.token).then(resp=>  console.log("channeljoined",resp))
 
@@ -105,7 +127,7 @@ const   joinChannel=async (role)=> {
       // Join a channel
     client.join(option.appID,
           option.channel,option.token  ,  0).then(async (resp)=>{
-            rtc.params.uid = resp;
+            rtc.params.uid= resp;
             console.log("join channel: " + option.channel + " success, uid: " + resp);
             if (role === "host") {
               client.setClientRole("host");
