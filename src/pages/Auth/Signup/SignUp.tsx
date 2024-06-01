@@ -2,10 +2,16 @@
 import { CContainer } from '@coreui/react'
 // import styles from '../Signup/SignUp.module.css'
 import styles from './SignUp.module.css';
+import { BASE_URL } from '../../../urls/urls';
+
+import { useFetch } from '../../../hooks/useFetch';
 
 // import '../Signup/signup.css'
 
 const Signup=()=>{
+
+  const api_call=useFetch();
+
     return(<CContainer fluid className={styles.signup_main_container}> 
     <div className={`d-flex p-2 div_back ${styles.div_back}`} >
         <p className={styles.backtext}>Back</p>
