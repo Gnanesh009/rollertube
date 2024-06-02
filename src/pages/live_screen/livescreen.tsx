@@ -100,7 +100,7 @@ const   joinChannel=async (role:string)=> {
     channel: "Testing",
     uid: 0,
     
-    token: "007eJxTYLDnjo/sOh+2fYNx7sFZ3PId7SF+XGsYguf9LZBrvv/ix3QFhkTTpERDQwtLY0tzS5M0A0ML40QDQ9NUM4NkA+MUM1Pz//zRaQ2BjAyTFl9lYIRCEJ+dISS1uCQzL52BAQBEBx+c",
+    token: "007eJxTYJjnlLjHUPJSZ4Zd7/wFm5JXW3sKaMsHGzF6f/JXmJutza7AkGialGhoaGFpbGluaZJmYGhhnGhgaJpqZpBsYJxiZmqeLBiT1hDIyBDBcZ2FkQECQXx2hpDU4pLMvHQGBgBToRtZ",
     key: '',
     secret: '',
     certificate:'1390ebdbe1da47ee90ca398ce756594e'
