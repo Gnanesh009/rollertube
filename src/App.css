@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Kufam-Regular';
+  src: url(../public//fonts//Kufam/Kufam-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Kufam-Black';
+  src: url(../public//fonts//Kufam/Kufam-Black.ttf);
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url(../public//fonts//Inter/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Inter_Bold';
+  src: url(../public//fonts/Inter/Inter-Bold.ttf);
+}

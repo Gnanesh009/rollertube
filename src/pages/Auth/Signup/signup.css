@@ -1,0 +1,40 @@
+.signup_main_container{
+
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.div_back
+{
+    font-family: 'Kufam-Black';
+    width: 100vw;
+    height: 10vh;
+    
+    justify-content: baseline;
+}
+.backtext
+{
+    margin: 0px;
+    padding: 0px;
+    top: 30px;
+    position: absolute;
+    left: 35px;
+}
+.div_creteaccount
+{
+    font-family: 'Kufam-Black';
+    width: 100vw;
+    height: 10vh;
+    font-weight: 700;
+    justify-content: center;
+    display: flex;
+}
+.creteaccount
+{
+    margin: 0px;
+    padding: 0px;
+    top: 60px;
+  
+    justify-content: center;
+}
