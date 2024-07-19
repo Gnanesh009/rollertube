@@ -1,0 +1,15 @@
+.bottomNavDivMain{
+    /* background-color: red; */
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    
+}   
+.bottomNav{
+    /* background-color: gray; */
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 95vw;
+    box-shadow: 0px 0px 5px 0px;
+}
