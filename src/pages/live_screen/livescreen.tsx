@@ -59,6 +59,30 @@ const LiveScreen = () => {
   }
   
 
+
+
+function genetateUID()
+{
+  return Math.floor(Math.random() * 100)
+}
+function randomString(length:number, chars:string) {
+  var result = '';
+  for (var i = length; i > 0; --i) result += chars[Math.floor(Math.random() * chars.length)];
+  return result;
+}
+
+const   joinChannel=async (role:string)=> {
+  // Create a client
+  var option = {
+    appID: "a5ba118939794f0183a015e60c03d657",
+    channel: "Testing",
+    uid: 0,
+    
+    token: "007eJxTYBCUkJCragktFej/5lvxTPDI7LPzLEQ2zq87823Dlcw8yaMKDImmSYmGhhaWxpbmliZpBoYWxokGhqapZgbJBsYpZqbmISL5aQ2BjAzL781gYIRCEJ+dISS1uCQzL52BAQBH4x9707eJxTYJjnlLjHUPJSZ4Zd7/wFm5JXW3sKaMsHGzF6f/JXmJutza7AkGialGhoaGFpbGluaZJmYGhhnGhgaJpqZpBsYJxiZmqeLBiT1hDIyBDBcZ2FkQECQXx2hpDU4pLMvHQGBgBToRtZ",
+    key: '',
+    secret: '',
+    certificate:'1390ebdbe1da47ee90ca398ce756594e'
+
   interface RTC {
     client: any;
     joined: boolean;
@@ -66,6 +90,7 @@ const LiveScreen = () => {
     localStream: any;
     remoteStreams: any[];
     params: RTCParams;
+
   }
 
   let rtc: RTC = {

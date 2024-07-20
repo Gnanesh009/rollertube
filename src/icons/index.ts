@@ -1,0 +1,6 @@
+export {default as HamburgerIcon} from './hamburger.png'
+export {default as MicrophoneIcon} from  './microphone.png'
+export {default as NotificationIcon} from  './notifications.png'
+export {default as IconSettingsIcon} from  './icon_settings.png'
+export {default as SearchIcon} from  './search.png'
+export {default as Logo} from '../images/logo.png'
